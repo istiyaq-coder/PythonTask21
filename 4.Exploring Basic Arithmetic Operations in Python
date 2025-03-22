@@ -1,0 +1,39 @@
+'''Write a Python program to explore basic arithmetic
+operations. The program should prompt the user to enter
+two numbers and then perform addition, subtraction,
+multiplication, division, and modulus operations on those
+numbers. The results of each operation should be displayed
+to the user'''
+
+INPUT :
+    
+#Taking user input 
+num1 = int(input("Enter frist number : "))
+num2 = int(input("Enter second number : "))
+
+#permorning addition
+add = num1 + num2
+print("The addition of numbers : ", add)
+
+#permorning substraction
+substract = num1 - num2
+print("The substraction of numbers : ", substract)
+
+#permorning multiplication
+multipliy = num1 * num2
+print("The multiplication  of numbers : ", multipliy)
+
+#permorning division
+divide = num1 / num2
+print("The division of numbers : ",divide )
+
+OUTPUT :
+
+Enter frist number : 4
+Enter second number : 2
+The addition of numbers :  6
+The substraction of numbers :  2
+The multiplication  of numbers :  8
+The division of numbers :  2.0
+
+    
