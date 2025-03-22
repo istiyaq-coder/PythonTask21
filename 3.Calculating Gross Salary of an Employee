@@ -1,0 +1,37 @@
+'''Write a Python program to calculate the gross salary of an
+employee. The program should prompt the user for the
+basic salary (BS) and then compute the dearness allowance
+(DA) as 70% of BS, the travel allowance (TA) as 30% of
+BS, and the house rent allowance (HRA) as 10% of BS.
+Finally, it should calculate the gross salary as the sum of
+BS, DA, TA, and HRA and display the result'''
+
+INPUT :
+
+#Taking uder input of basic salary
+basic_salary = float(input("Enter the basic salary of the employee : "))
+
+#Calculate dearness allowance of employee
+daerness_allowance = 0.7*basic_salary
+print("The dearness allowance of the employee",daerness_allowance)
+
+#Calculate travel allowance of employee
+travel_allowance = 0.3*basic_salary
+print("The travel allowance of the employee",travel_allowance)
+
+#Calculate rent allowance of employee
+rent_allowance = 0.1*basic_salary
+print("The rent allowance of the employee",rent_allowance)
+
+#calculate the gross salary
+gross_salary = basic_salary + daerness_allowance + travel_allowance + rent_allowance 
+
+print("The gross salary of employee",gross_salary)
+
+OUTPUT :
+
+Enter the basic salary of the employee : 10000
+The dearness allowance of the employee 7000.0
+The travel allowance of the employee 3000.0
+The rent allowance of the employee 1000.0
+The gross salary of employee 21000.0    
