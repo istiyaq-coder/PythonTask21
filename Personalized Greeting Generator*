@@ -1,0 +1,27 @@
+#Write a python code to generate Personalized Greeting using input/ output statements
+
+INPUT :
+    
+# Take input from the user for the name
+name = input("enter the name : ")
+
+# Take input from the user for the occasion
+occasion = input("enter the occasion : ")
+
+# Take input from the user for the greeting message
+greet = input("enter the greeting : ")
+
+# Print the message with the occasion and name formatted in the greeting
+print(f"Happy {occasion} {name}")
+
+# Print the user-provided greeting
+print(f"{greet}")
+
+
+OUTPUT :
+
+enter the name : utsav
+enter the occasion : birthday
+enter the greeting : Hope this day comes with lots of joy and happiness in your life
+Happy birthday utsav
+Hope this day comes with lots of joy and happiness in your life
