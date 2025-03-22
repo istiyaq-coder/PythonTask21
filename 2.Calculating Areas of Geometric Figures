@@ -1,0 +1,33 @@
+'''Write a python program to calculate areas of any geometric figures
+like circle, rectangle and triangle.'''
+
+INPUT:
+
+#Taking user input ;length ,breadth, height & radius
+
+length = int(input("Enter the length : "))
+breadth = int(input("Enter the breadth : "))
+radius = int(input("Enter the radius : "))
+height = int(input("Enter the height : "))
+
+#calculate area of circle
+area_circle = 3.14*radius*radius
+print("The area of the circle : ",area_circle)
+
+#calculate area of rectangle
+area_rectangle = length*breadth
+print("The area of the rectangle : ",area_rectangle)
+
+#calculate area of triangle
+area_triangle = 0.5*length*height
+print("The area of the triangle : ",area_triangle)
+
+OUTPUT:
+    
+Enter the length : 10
+Enter the breadth : 10
+Enter the radius : 10
+Enter the height : 10
+The area of the circle :  314.0
+The area of the rectangle :  100
+The area of the triangle :  50.0
