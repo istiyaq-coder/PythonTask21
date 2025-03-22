@@ -1,0 +1,63 @@
+'''Develop a Pytho599n program that takes a numerical input and identifies whether it is even
+or odd, utilizing conditional statements and loops.'''
+
+METHOD 1
+INPUT:
+
+    n = int(input("Enter how many num you have to check? : "))
+for i in range(n):
+    num = int(input("Enter a number : "))
+    even = num % 2 == 0
+    if(even):
+        print(f"The number {num} is even")
+    else:
+        print(f"The number {num} is odd")
+
+OUTPUT:
+
+Enter how many num you have to check? : 6
+Enter a number : 3
+The number 3 is odd
+Enter a number : 4
+The number 4 is even
+Enter a number : 5
+The number 5 is odd
+Enter a number : 6
+The number 6 is even
+Enter a number : 7
+The number 7 is odd
+Enter a number : 9
+The number 9 is odd
+
+METHOD2
+#INPUT:
+
+while True:
+    # Take a number input from the user
+    num = int(input("Enter a number: "))
+    
+    # Check if the number is even or odd
+    if num % 2 == 0:
+        print(f"The number {num} is even")
+    else:
+        print(f"The number {num} is odd")
+    
+    # Ask the user if they want to check another number
+    continue_check = input("Do you want to check another number? (yes/no): ").lower()
+    
+    # If the user types 'no', exit the loop
+    if continue_check != "yes":
+        print("Exiting the program.")
+        break  # Exit the loop and stop the program
+    
+#OUTPUT:
+Enter a number: 5
+The number 5 is odd
+Do you want to check another number? (yes/no): YES
+Enter a number: 8
+The number 8 is even
+Do you want to check another number? (yes/no): yes
+Enter a number: 9
+The number 9 is odd
+Do you want to check another number? (yes/no): no
+Exiting the program.   
