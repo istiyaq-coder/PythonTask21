@@ -1,0 +1,28 @@
+'''Create a Python code to demonstrate the use of sets and perform set operations (union,
+intersection, difference) to manage student enrollments in multiple courses / appearing for multiple
+entrance exams like CET, JEE, NEET etc.'''
+
+INPUT :
+
+# Example student enrollments in multiple courses/exams
+cet_students = {"Alice", "Bob", "Charlie", "David", "Eva"}
+jee_students = {"Bob", "David", "Frank", "Grace", "Hannah"}
+neet_students = {"Charlie", "Eva", "Grace", "Hannah", "Isla"}
+
+# Union operation: Students who have enrolled in at least one exam/course
+all_students = cet_students.union(jee_students, neet_students)
+print("All students enrolled in any exam/course (Union):", all_students)
+
+# Intersection operation: Students who have enrolled in both CET and JEE
+cet_jee_students = cet_students.intersection(jee_students)
+print("Students enrolled in both CET and JEE (Intersection):", cet_jee_students)
+
+# Difference operation: Students who are enrolled in CET but not in JEE
+cet_only_students = cet_students.difference(jee_students)
+print("Students enrolled only in CET (Difference):", cet_only_students)
+
+OUTPUT :
+
+All students enrolled in any exam/course (Union): {'Hannah', 'Eva', 'Charlie', 'Bob', 'Isla', 'Grace', 'David', 'Alice', 'Frank'}
+Students enrolled in both CET and JEE (Intersection): {'David', 'Bob'}
+Students enrolled only in CET (Difference): {'Charlie', 'Eva', 'Alice'}    
