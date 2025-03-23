@@ -1,0 +1,29 @@
+'''Develop a Python program that reads a text file and prints words of specified lengths (e.g.,
+three, four, five, etc.) found within the file.
+'''
+
+#INPUT:
+
+def print_words_of_length(file_name, lengths):
+    with open(file_name, 'r') as f:
+        words = f.read().split()
+
+    for length in lengths:
+        print(f"Words of length {length}:")
+        for word in words:
+            if len(word) == length:
+                print(word)
+
+# Example usage
+print_words_of_length("poems.txt", [3, 4, 5])  # Specify the lengths you want
+
+'''OUTPUT:
+Words of length 3:
+put
+run
+Words of length 4:
+have
+many
+this
+code
+Words of length 5:'''
