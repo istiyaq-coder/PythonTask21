@@ -1,0 +1,45 @@
+Write a Python script that prompts the user to enter their phone number and email ID. It then 
+
+employs Regular Expressions to verify if these inputs adhere to standard phone number and email address 
+
+formats.
+
+import re
+
+phone = input("Enter your phone number: ")
+
+email = input("Enter your email ID: ")
+
+phone_pattern = re.fullmatch(r'[6-9]\d{9}', phone)
+
+email_pattern = re.fullmatch(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', email)
+
+if phone_pattern:
+
+ print("Valid phone number.")
+
+else:
+
+ print("Invalid phone number.")
+
+if email_pattern:
+
+ print("Valid email ID.")
+
+else:
+
+ print("Invalid email ID.")
+
+'''
+
+Output:
+
+Enter your phone number: 900000000000
+
+Enter your email ID: abc@eng.rizvi.edu.in
+
+Invalid phone number.
+
+Valid email ID.
+
+'''
