@@ -1,0 +1,43 @@
+#Write a program to implement OOPS in python.
+
+class Animal:
+
+def __init__(self, name):
+
+self.name = name
+
+def speak(self):
+
+return "Animal sound"
+
+# Derived class 1
+
+class Dog(Animal):
+
+def speak(self):
+
+return "Woof!"
+
+# Derived class 2
+
+class Cat(Animal):
+
+def speak(self):
+
+return "Meow!"
+
+# Creating instances
+
+dog = Dog("Buddy")
+
+cat = Cat("Whiskers")
+
+print(f"{dog.name} says {dog.speak()}")
+
+print(f"{cat.name} says {cat.speak()}")
+
+Output:
+
+Buddy says Woof!
+
+Whiskers says Meow!
