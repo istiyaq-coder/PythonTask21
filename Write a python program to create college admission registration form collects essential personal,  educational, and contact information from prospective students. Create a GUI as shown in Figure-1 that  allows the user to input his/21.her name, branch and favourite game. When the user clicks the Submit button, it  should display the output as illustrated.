@@ -1,4 +1,4 @@
-Write a python program to create college admission registration form collects essential personal, 
+21Write a python program to create college admission registration form collects essential personal, 
 educational, and contact information from prospective students. Create a GUI as shown in Figure-1 that 
 allows the user to input his/her name, branch and favourite game. When the user clicks the Submit button, it 
 should display the output as illustrated.
