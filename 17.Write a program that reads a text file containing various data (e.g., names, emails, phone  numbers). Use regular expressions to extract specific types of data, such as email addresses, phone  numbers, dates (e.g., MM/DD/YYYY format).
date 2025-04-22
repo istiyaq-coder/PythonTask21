@@ -1,0 +1,32 @@
+ Write a program that reads a text file containing various data (e.g., names, emails, phone 
+numbers). Use regular expressions to extract specific types of data, such as email addresses, phone 
+numbers, dates (e.g., MM/DD/YYYY format).
+import re
+with open("data.txt", "r") as file:
+ content = file.read()
+emails = re.findall(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', content)
+phones = re.findall(r'\b[6-9]\d{9}\b', content)
+dates = re.findall(r'\b\d{2}/\d{2}/\d{4}\b', content)
+print("Email addresses found:")
+for email in emails:
+ print(email)
+print("\nPhone numbers found:")
+for phone in phones:
+ print(phone)
+print("\nDates found:")
+for date in dates:
+ print(date)
+'''
+Output:
+Email addresses found:
+john.doe@example.com
+contact@company.org
+hello123@mail.net
+Phone numbers found:
+9876543210
+9123456789
+8899001122
+Dates found:
+01/15/2023
+12/31/2024
+05/06/2022
