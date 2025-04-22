@@ -1,0 +1,33 @@
+Create a executable file for any program developed in earlier practical.
+
+🧾 Step 1: Create a Python File
+
+Example: greet.py
+
+def greet():
+
+ name = input("Enter your name: ")
+
+ print(f"Hello, {name}! Welcome.")
+
+greet()
+
+🔁 Step 2: Install PyInstaller
+
+Open Command Prompt or Terminal and run:
+
+pip install pyinstaller
+
+⚙️ Step 3: Create Executable
+
+Navigate to the folder containing your Python file, then run:
+
+pyinstaller --onefile greet.py
+
+📂 Step 4: Locate Your .exe File
+
+After the build is complete, go to the dist folder inside your project directory:
+
+dist/greet.exe
+
+Double-click the file to run your program without needing Python installed.
